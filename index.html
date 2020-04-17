@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>乱数ツール</title>
+  </head>
+  <body>
+    <header>
+      <h1>乱数ツール</h1>
+      <p>指定した範囲の中からランダムな数を出します</p>
+    </header>
+
+    <div id="app">
+      <form class="pure-form pure-form-stacked" @submit.prevent="generate_randnum">
+        <div class="pure-g">
+          <fieldset>
+            <div class="pure-control-group pure-u-1">
+              <label for="min_number" class="pure-u-1">乱数の最小値</label>
+              <input v-model="min_number" id="min_number" class="pure-input-1" type="number">
+            </div>
+            <div class="pure-control-group pure-u-1">
+              <label for="max_number" class="pure-u-1">乱数の最大値</label>
+              <input v-model="max_number" id="max_number" class="pure-input-1" type="number">
+            </div>
+            <div class="pure-control-group pure-u-1">
+              <button class="pure-input-1 pure-button pure-button-primary">生成！</button>
+            </div>
+          </fieldset>
+          <div class="pure-u-1">
+            <label for="result" class="pure-u-1">結果</label>
+            <input v-model="result" id="result" class="pure-input-1" type="text">
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
