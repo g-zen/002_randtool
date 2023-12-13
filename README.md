@@ -2,7 +2,7 @@
 
 乱数を生成するだけの簡単なアプリです。
 
-https://guppytubasa.github.io/002_randtool/index.html
+https://g-zen.github.io/002_randtool/index.html
 
 ## 使い方
 
